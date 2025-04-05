@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscription - Formation Design Graphique</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #000;
+      color: #fff;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #444;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Fiche d'inscription à la formation en design graphique</h2>
+    <form action="https://formspree.io/f/xjkyazgn" method="POST">
+      <label>Nom & Prénom :</label>
+      <input type="text" name="nom" required>
+
+      <label>Âge :</label>
+      <input type="number" name="age">
+
+      <label>Sexe :</label>
+      <select name="sexe">
+        <option>Homme</option>
+        <option>Femme</option>
+      </select>
+
+      <label>Téléphone WhatsApp :</label>
+      <input type="tel" name="telephone" required>
+
+      <label>Email :</label>
+      <input type="email" name="email" required>
+
+      <label>Niveau d’expérience en graphisme :</label>
+      <select name="niveau">
+        <option>Débutant</option>
+        <option>Intermédiaire</option>
+        <option>Avancé</option>
+      </select>
+
+
+      <label>Formation choisie:</label>
+      <select name="formation">
+        <option>Design graphique et création visuelle</option>
+        <option>Photoshop et Illustrator</option>
+        <option>Conception web</option>
+        <option>Motion design</option>
+      </select>
+
+      <label>Mode de Formation:</label>
+      <select name="mode">
+        <option>Présentiel</option>
+        <option>En ligne</option>
+      </select>
+
+      <label>Mode de paiement :</label>
+      <select name="mode">
+        <option>Espèces</option>
+        <option>Mobile money</option>
+        <option>Virement bancaire</option>
+      </select>
+
+      <label>Logiciels déjà utilisés (Photoshop, Illustrator, etc.) :</label>
+      <input type="text" name="logiciels">
+
+      <label>Adresse (quartier / commune) :</label>
+      <input type="text" name="adresse">
+
+      <label>Disponibilité (jours & heures) :</label>
+      <input type="text" name="disponibilite">
+
+      <label>Pourquoi souhaitez-vous suivre cette formation ?</label>
+      <textarea name="motivation" rows="4"></textarea>
+
+      <button type="submit">S'inscrire</button>
+    </form>
+  </div>
+</body>
+</html>
